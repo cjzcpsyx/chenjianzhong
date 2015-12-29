@@ -1,9 +1,10 @@
+{% extends "_init.html" %}
+{% block body %}
 {% if experience_list %}
-	<ul>
-		{% for experience in experience_list %}
-			<li>{{experience.title}}</li>
-		{% endfor %}
-	</ul>
+	{% for experience in experience_list %}
+		<li>{{experience.title}}</li>
+	{% endfor %}
 {% else %}
 	<p>no experience</p>
 {% endif %}
+{% endblock %}
