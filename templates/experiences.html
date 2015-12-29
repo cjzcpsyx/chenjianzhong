@@ -1,0 +1,9 @@
+{% if experience_list %}
+	<ul>
+		{% for experience in experience_list %}
+			<li>{{experience.title}}</li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>no experience</p>
+{% endif %}
