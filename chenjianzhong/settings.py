@@ -57,7 +57,7 @@ ROOT_URLCONF = 'chenjianzhong.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/chenjianzhong')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/chenjianzhong'), os.path.join(BASE_DIR, 'templates/yearbook')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -104,6 +104,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/chenjianzhong'),
+    os.path.join(BASE_DIR, 'static/yearbook'),
 )
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

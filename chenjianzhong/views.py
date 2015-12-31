@@ -12,3 +12,6 @@ def experiences(request):
 def projects(request):
 	experience_list = Experience.objects.all
 	return render(request, 'experiences.html', {'experience_list': experience_list})
+
+def yearbook(request, year):
+	return render(request, year + '.html')

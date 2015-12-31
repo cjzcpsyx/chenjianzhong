@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^experiences/$', views.experiences, name='experiences'),
     url(r'^projects/$', views.projects, name='projects'),
+    url(r'^yearbook/(?P<year>[0-9]+)$', views.yearbook, name='yearbook')
 ]
