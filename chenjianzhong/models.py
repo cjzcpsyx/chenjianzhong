@@ -2,6 +2,7 @@ from django.db import models
 
 class Experience(models.Model):
 	title = models.CharField(max_length=200)
+	role = models.CharField(max_length=200)
 	description = models.TextField()
 	added = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
