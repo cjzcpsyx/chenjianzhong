@@ -107,5 +107,6 @@ img {
     margin: auto;
     margin-top: 5px;
     font-size: 20px;
-    line-height: 75px;
+    height: 75px;
+    line-height: 30px;
 }
