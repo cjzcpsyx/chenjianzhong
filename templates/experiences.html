@@ -1,5 +1,5 @@
-{% extends "_init.html" %}
-{% block body %}
+{% extends "init.html" %}
+{% block content %}
 {% if experience_list %}
 	{% for experience in experience_list %}
 		<li>{{experience.title}}</li>
