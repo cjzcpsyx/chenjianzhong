@@ -1,0 +1,25 @@
+{% extends "init.html" %}
+
+{% block head %}
+{% load sass_tags %}
+<link rel="stylesheet" type="text/css" href="{% sass_src "project.scss" %}">
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="projects">
+{% if project_list %}
+	{% for project in project_list %}
+		<div class="row">
+			<div class="col-md-12">
+				{{project.name}}
+			</div>
+		</div>
+	{% endfor %}
+{% else %}
+	<p>no project</p>
+{% endif %}
+</div>
+{% endblock %}
